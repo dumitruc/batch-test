@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dumitruc/TestingTemplate.svg?branch=master)](https://travis-ci.org/dumitruc/TestingTemplate)
+
 Empty template
 ==============
 
