@@ -30,7 +30,7 @@ public class StepDefDateParse extends StepDefBase {
 
     SimpleDateFormat validationDateFormater = new SimpleDateFormat("yyyy-MM-dd");
 
-    public static boolean completed = false;
+
 
     long currentKey = 0;
 
@@ -73,13 +73,15 @@ public class StepDefDateParse extends StepDefBase {
 
     @And("^application has run$")
     public void applicationHasRun() throws Throwable {
-        outDate = BigAndHeavy.parseDate(inDates);
-        completed = true;
+        if (!cukeTestContext.completed) {
+            outDate = BigAndHeavy.parseDate(inDates);
+            cukeTestContext.completed = true;
+        }
     }
 
     @When("^my big machine finished processing the data$")
     public void myBigMachineFinishedProcessingTheData() throws Throwable {
-        if (!completed) {
+        if (!cukeTestContext.completed) {
             applicationHasRun();
         }
     }
