@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dumitruc/TestingTemplate.svg?branch=master)](https://travis-ci.org/dumitruc/TestingTemplate)
+[![Build Status](https://travis-ci.org/dumitruc/TestingTemplate.svg?branch=master)](dumitruc/batch-test)
 
 How to test batch processes
 ==============
