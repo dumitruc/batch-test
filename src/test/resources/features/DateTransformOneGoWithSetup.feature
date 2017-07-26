@@ -11,6 +11,7 @@ Feature: Date processing - fast and ugly
     Easier to follow (i.e. business read)
   Cons:
     Convoluted codding at the back, more places to go wrong, more maintenance
+    Complexity grows exponentially with objects and flow complexity(i.e. lose of flow, context etc...)
     Some break down(or fake) in test flow
 
 
