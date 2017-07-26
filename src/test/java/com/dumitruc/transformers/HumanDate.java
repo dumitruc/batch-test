@@ -1,3 +1,8 @@
+package com.dumitruc.transformers;
+
+/**
+ * Created by dima on 25/07/2017.
+ */
 import com.mdimension.jchronic.Chronic;
 import com.mdimension.jchronic.utils.Span;
 import cucumber.api.Transformer;
