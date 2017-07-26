@@ -1,6 +1,7 @@
 package com.dumitruc.training.stepdefs;
 
 import com.dumitruc.training.BigAndHeavy;
+import com.dumitruc.training.CukeTestContext;
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
@@ -10,6 +11,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,6 +24,9 @@ import java.util.List;
 public class StepDefDateParse extends StepDefBase {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(StepDefBase.class);
+
+    @Autowired
+    CukeTestContext cukeTestContext;
 
     Scenario scenario;
 

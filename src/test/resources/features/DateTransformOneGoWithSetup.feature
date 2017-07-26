@@ -31,12 +31,12 @@ Feature: Date processing - fast and ugly
 
   Scenario: Passing some UK formatted date
     Given my transaction data contains the date as "20/07/2017"
-    When my big machine processes this data
+    When my big machine finished processing the data
     Then it identifies the date as "yyyy/MM/dd" with value "2017/07/20"
 
   Scenario: Passing some US formatted date
     Given my transaction data contains the date as "07/20/2017"
-    When my big machine processes this data
+    When my big machine finished processing the data
     Then it identifies the date as "yyyy/MM/dd" with value "2017/07/20"
 
 #And so on and so forth...

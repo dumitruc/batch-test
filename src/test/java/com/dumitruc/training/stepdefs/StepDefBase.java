@@ -12,6 +12,4 @@ public class StepDefBase {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(StepDefBase.class);
 
-    @Autowired
-    CukeTestContext cukeTestContext;
 }

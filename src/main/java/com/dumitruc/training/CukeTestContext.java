@@ -1,5 +1,6 @@
 package com.dumitruc.training;
 
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -8,5 +9,5 @@ import org.springframework.stereotype.Component;
 @Component
 public class CukeTestContext {
 
-    public static Boolean completed;
+    public static Boolean completed = false;
 }
